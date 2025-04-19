@@ -7,7 +7,7 @@ def main():
 
   while True:
     print ("********************************")
-    print ("AutoCountry Vehicle Finder v0.2")
+    print ("AutoCountry Vehicle Finder v0.3")
     print ("********************************")
     print("Please Enter the following number below from the following menu: ")
     print ("\n1. PRINT all Authorized Vehicles")
