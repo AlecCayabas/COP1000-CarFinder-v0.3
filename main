@@ -14,28 +14,32 @@ def main():
     print ("2. SEARCH for Authorized Vehicle")
     print ("3. ADD authorized vehicle")
     print ("4. Exit")
-
+    
     userInput = input("Enter selection: ")
+    
 
     if userInput == "1":
+      print("********************************")
       print("\nThe AutoCountry sales manager has authorized the purchase and selling of the following vehicles:")
       for vehicle in allowedVehiclesList:
         print(vehicle)
 
     elif userInput == "2":
-      print ("********************************")
+      print("********************************")
       vehicleSearch = input("Please Enter the full Vehicle name: ")
       if vehicleSearch in allowedVehiclesList:
         print(f"\n{vehicleSearch} is an authorized vehicle")
       else:
         print(f"\n{vehicleSearch} is not an authorized vehicle, if you received this in error please check the spelling and try again")
-
+      
+    
     elif userInput == "3":
-      print("********************************")
+      print("*********************************")
       newVehicle = input("Please Enter the full Vehicle name you would like to add: ")
       allowedVehiclesList.append(newVehicle)
       print(f'\nYou have added "{newVehicle}" as an authorized vehicle')
-
+  
+      
     elif userInput == "4":
       print("\nThank you for using the AutoCountry Vehicle Finder, good-bye!")
       break
